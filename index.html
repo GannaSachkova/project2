@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EasyWayHoliday</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <header class="container-fluid navbar-section">
+        <nav class="navbar navbar-light bg-light nav">
+            <a id="nav-title" class="navbar-brand uppercase" href="#">
+                EasyWayHoliday
+            </a>
+        </nav>
+    </header>
+    <section class="container-fluid map-section">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 filter-column">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Filter</h3>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div id="findhotels" class="col-md-12 header-filter find-header">
+                        City/Town:
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <select class="input-boxes" id="city" disabled>
+                                <option value="select-city">Select city</option>
+                                <option value="Athlone" selected>Athlone</option>
+                               
+                        </select>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="row">
+                    <div id="findhotels" class="col-md-12 find-header">
+                        Type:
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 radio-form">
+                            <input type="radio" name="gender" value="accomodation" id="accomodationRadio"> <span class="radio-buttons">Accomodation</span><br>
+                            <input type="radio" name="gender" value="Restaurants/Bars" id="foodRadio"> <span class="radio-buttons">Restaurants/Bars</span><br>
+                            <input type="radio" name="gender" value="Tourist Attractions" id="entertainment"> <span class="radio-buttons">Entertainment</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button id="reset-button" type="button" class="btn btn-primary" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="section-heading uppercase">Map</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">About</h5>
+                <p class="inline-block">
+                    EasyWayHoliday
+                </p>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="uppercase general-sub">Made by</h5>
+                <p class="inline-block">
+                    Ganna Sachkova
+                </p>
+            </div>
+        </div>
+    </footer>
+
+<script src="assets/js/maps.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVkmdOSzRqbEW7-G9BobjcY177dPhMamA&callback=initMap" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>
